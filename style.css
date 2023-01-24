@@ -1,0 +1,85 @@
+*{
+    padding: 0;
+    margin: 30;
+    font-family:Arial, Helvetica, sans-serif
+}
+
+
+.title {
+    text-align: center;
+    color: white;
+    letter-spacing: 2px;
+}
+
+p {
+    color: white;
+    text-align: center;
+    line-height: 5px;
+    font-size: 20px;
+}
+
+
+/* Variables de los colores */
+:root {
+    --neutral: #181A1B;
+    --incorrecto: #585F63;
+    --inexacto: #896311;
+    --correcto: #368039;
+}
+
+html {
+    background-color: var(--neutral);
+}
+
+#intJuego {
+    display: grid;
+    place-items: center;
+    width: 100%;
+    height: 600px;
+}
+
+.cuadricula {
+    display: grid;
+    grid-template-columns: repeat(5, auto);
+    grid-template-rows: repeat(6, auto);
+}
+
+.cuadro {
+    width:60px;
+    height: 60px;
+    border: 2px solid var(--incorrecto);
+    margin: 4px;
+    color: white;
+    text-transform: uppercase;
+    display: grid;
+    place-items: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 2.4rem;
+    border-radius: 5px;
+}
+
+/* Se extiende la clase para los diferentes estados */
+
+.cuadro.normal{
+    background-color: var(--neutral);
+}
+
+.cuadro.incorrecto {
+    background-color: var(--incorrecto);
+}
+
+.cuadro.inexacto {
+    background-color: var(--inexacto);
+}
+
+.cuadro.correcto {
+    background-color: var(--correcto);
+}
+
+#contador {
+    color: white;
+    font-size: 1.875em; 
+    display: flex;
+    justify-content: center;
+    
+}

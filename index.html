@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wordle </title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1 class="title">WORDLE</h1>
+    <hr>
+    <h2 class="title">Racha actual:</h2>
+    <div id="box">
+        <div id="contador">0</div>
+    </div>
+    <div id="intJuego"></div>
+
+    <p>Las reglas son simples: adivina la palabra oculta en 6 intentos. </p>
+    <p>Cada intento debe ser una palabra valida y si la palabra no existe el juego te avisará.</p>
+    <p>Después de cada intento el color de las casillas cambia para mostrar qué tan cerca estás de acertar la palabra.</p>
+    <br>
+    <p><span style="color: #368039">VERDE</span> significa que la letra está en la palabra y en la posición CORRECTA.</p>
+    <p><span style="color: #896311">AMARILLO</span> significa que la letra letra está presente en la palabra pero en la posición INCORRECTA.</p>
+    <p><span style="color: #585F63">GRIS</span> significa que la letra letra NO está presente en la palabra.</p>
+    <script src="index.js"></script>
+</body>
+</html>
